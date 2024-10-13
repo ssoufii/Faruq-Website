@@ -1,603 +1,949 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Salim Soufi's Portfolio Website</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <style>
+      /* Updated styles for improved carousel layout */
+      .carousel-caption {
+        text-align: left;
+        left: 5%;
+        right: 5%;
+      }
+      .carousel-text-container {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        border-radius: 10px;
+      }
+      @media (max-width: 768px) {
+        .carousel-caption h1 {
+          font-size: 1.2rem;
+          margin-bottom: 0.5rem;
+        }
+        .carousel-caption p {
+          font-size: 0.8rem;
+          margin-bottom: 0.5rem;
+        }
+        .carousel-caption .btn {
+          font-size: 0.7rem;
+          padding: 0.2rem 0.4rem;
+        }
+        .carousel-text-container {
+          padding: 10px;
+        }
+      }
+    </style>
+    <meta charset="utf-8" />
+    <title>Sahaba Mosque</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GJ0Z3ZET81"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <link rel="stylesheet" href="css/aos.css">
+  gtag('config', 'G-GJ0Z3ZET81');
+</script>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
   </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Salim</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
-	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Hobbies</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	      <div class="slider-item ">
-	      	<div class="overlay"></div>
-	        <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/salim.png);">
-	          		<div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3"> I'm <span>Salim Soufi</span></h1>
-			            <h2 class="mb-4"> A Software Developer<span class = "auto-type"></span> </h2> 
-						
-			            <p><a href="https://docs.google.com/document/d/1Y1ieFGHaZ3IMDMuTdZPEXzaliZm11MD5/edit" class="btn btn-primary py-3 px-4">Hire me!</a> <a href="https://github.com/ssoufii" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
 
-	      <div class="slider-item">
-	      	<div class="overlay"></div>
-	        <div class="container">
-	          <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/salim.png);">
-	          		<div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm a <span>Computing Science Student</span> based in Canada!</h1>
-			            <p><a href="https://docs.google.com/document/d/1Y1ieFGHaZ3IMDMuTdZPEXzaliZm11MD5/edit" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-	    </div>
-    </section>
-
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-    		<div class="row d-flex">
-    			<div class="col-md-6 col-lg-5 d-flex">
-    				<div class="img-about img d-flex align-items-stretch">
-    					<div class="overlay"></div>
-	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/salim2.HEIC);">
-	    				</div>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-    				<div class="row justify-content-start pb-3">
-		          <div class="col-md-12 heading-section ftco-animate">
-		          	<h1 class="big">About</h1>
-		            <h2 class="mb-4">About Me</h2>
-		            <p>Favourite Quote: You miss 100% of the shots you don't take. </p>
-		            <ul class="about-info mt-4 px-md-0 px-2">
-		            	<li class="d-flex"><span>Name:</span> <span>Salim Soufi</span></li>
-		            	<li class="d-flex"><span>Date of birth:</span> <span>August 3rd, 2004</span></li>
-		            	<li class="d-flex"><span>Country:</span> <span>Edmonton, Canada</span></li>
-		            	<li class="d-flex"><span>Zip code:</span> <span>T5X0H5</span></li>
-		            	<li class="d-flex"><span>Email:</span> <span>soufi1@ualberta.com</span></li>
-		            	<li class="d-flex"><span>Phone: </span> <span>+1-780-235-7761</span></li>
-		            </ul>
-		          </div>
-		        </div>
-	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
-              <div class="text">
-              	<p class="mb-4">
-	                <span class="number" data-number="12">0</span>
-	                <span>Project complete</span>
-                </p>
-                <p><a href="https://docs.google.com/document/d/1Y1ieFGHaZ3IMDMuTdZPEXzaliZm11MD5/edit" class="btn btn-primary py-3 px-3">View CV</a></p>
-              </div>
-	          </div>
-	        </div>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark text-white-50 py-2 px-3 d-none d-lg-block">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <div class="d-flex align-items-center">
+            <div class="me-4">
+              <small class="fa fa-phone-alt me-2"></small>
+              <small>(780)-243-8811</small>
+            </div>
+            <div class="me-4">
+              <small class="far fa-envelope-open me-2"></small>
+              <small>info@sahabamosque.com</small>
+            </div>
+            <div id="top-bar-prayer-times">
+              <!-- Prayer times will be inserted here -->
+            </div>
+          </div>
         </div>
-    	</div>
-    </section>
+        <div class="col-lg-4 text-end">
+          <div class="d-flex justify-content-end align-items-center">
+            <div id="top-bar-prayer-times" class="me-4">
+              <!-- Prayer times will be inserted here -->
+            </div>
+            <a class="text-white-50 me-3" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="text-white-50" href="https://www.instagram.com/sahabamosque?igsh=YzBvajF3MWs2NTh1&utm_source=qr"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
 
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resume</h1>
-            <h2 class="mb-4">Resume</h2>
+    <!-- Navbar Start -->
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5"
+    >
+    <a href="index.html" class="navbar-brand">
+      <img
+        class="img-fluid"
+        src="img/sahaba.jpg"
+        alt="Sahaba Mosque Logo"
+        style="width: 70px; height: 140px;"
+
+      />
+    </a>
+    
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="about.html" class="nav-item nav-link">About Us</a>
+          <a href="service.html" class="nav-item nav-link">Events</a>
+          <a href="prayer.html" class="nav-item nav-link">Prayer Times</a>
+          <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+        </div>
+      </div>
+     
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+      <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="w-100" src="img/SYC.jpg" alt="Image" />
+            <div class="carousel-caption d-flex align-items-center">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-md-8 col-lg-6 offset-md-1">
+                    <div class="carousel-text-container">
+                      <h1 class="text-white mb-3">
+                        Sahaba Youth Centre, Incoming Hub for the Youth 
+                      </h1>
+                      <p class="text-white mb-3">
+                        We're excited to announce that the Sahaba Youth Centre (SYC) will officially open on October 1st, 2024! This new facility will serve as a vibrant hub for the community's youth, offering Quran and Arabic classes, a basketball court, a lounge area, and a dedicated homework club.
+                      </p>
+                      <a href="" class="btn btn-primary">More Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="w-100" src="img/carousel-2.jpg" alt="Image" />
+            <div class="carousel-caption d-flex align-items-center">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-md-8 col-lg-6 offset-md-1">
+                    <div class="carousel-text-container">
+                      <h1 class="text-white mb-3">
+                        NEW Al Faruq Islamic School  
+                      </h1>
+                      <p class="text-white mb-3">
+                        By the Grace of Allah SWT, The Al Faruq Islamic Centre Project and the community have reached a new milestone, we have been fully approved by Alberta Education. We will be accepting KG & Grade 1 students only, limited spots for September 2024.
+                      </p>
+                      <a href="https://www.alfaruqcentre.com/" class="btn btn-primary">Visit Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div
+              class="position-relative overflow-hidden rounded ps-5 pt-5 h-100"
+              style="min-height: 400px"
+            >
+              <img
+                class="position-absolute w-100 h-100"
+                src="img/about.jpg"
+                alt=""
+                style="object-fit: cover"
+              />
+              <div
+                class="position-absolute top-0 start-0 bg-white rounded pe-3 pb-3"
+                style="width: 200px; height: 200px"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center text-center bg-primary rounded h-100 p-3"
+                >
+                  <h1 class="text-white mb-0">26</h1>
+                  <h2 class="text-white">Years</h2>
+                  <h5 class="text-white mb-0">Standing</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="h-100">
+              <h1 class="display-6 mb-5">
+                Support Your Masjid Today
+              </h1>
+              <p class="fs-5 text-primary mb-4">
+                "Verily, the believers are like a structure,
+                each part strengthening the other." [al-Bukhari]"
+              </p>
+              
+              <div style="display: flex; gap: 20px; padding-bottom: 30px;">
+                <button onclick="window.location.href='https://www.canadahelps.org/en/charities/downtown-islamic-association/'"
+                        style="padding: 15px 30px; font-size: 16px; color: white; background-color: #007bff; border: none; border-radius: 5px; cursor: pointer; transition: transform 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    Monthly Donation
+                </button>
+                <button onclick="window.location.href='https://www.canadahelps.org/en/dn/91249'"
+                        style="padding: 15px 30px; font-size: 16px; color: #007bff; background-color: white; border: 2px solid #007bff; border-radius: 5px; cursor: pointer; transition: transform 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    One Time Donation
+                </button>
+            </div>
+            <script>
+                // Add click animation
+                const buttons = document.querySelectorAll('button');
+                buttons.forEach(button => {
+                    button.addEventListener('mousedown', () => {
+                        button.style.transform = 'scale(0.95)';
+                    });
+                    button.addEventListener('mouseup', () => {
+                        button.style.transform = 'scale(1)';
+                    });
+                });
+            </script>
+              <p class="mb-4">
+                By donating, you are investing in the future of our community, helping to create a nurturing environment where families can come together to learn, pray, and grow spiritually. 
+                Your support allows us to offer educational programs for children and adults, host community events, and provide a space for everyone to strengthen their faith and build lasting connections with one another.
+              </p>
+              <div class="border-top mt-4 pt-4">
+                <div class="d-flex align-items-center">
+                  <h5 class="mb-0">Call Us: (780)-243-8811</h5>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Facts Start
+    <div class="container-fluid overflow-hidden my-5 px-lg-0">
+      <div class="container facts px-lg-0">
+        <div class="row g-0 mx-lg-0">
+          <div class="col-lg-6 facts-text wow fadeIn" data-wow-delay="0.1s">
+            <div class="h-100 px-4 ps-lg-0">
+              <h1 class="text-white mb-4">For Individuals And Communities </h1>
+              <p class="text-light mb-5">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
+                sed stet lorem sit clita duo justo magna dolore erat amet
+              </p>
+              <a href="" class="align-self-start btn btn-secondary py-3 px-5"
+                >More Details</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-6 facts-counter wow fadeIn" data-wow-delay="0.5s">
+            <div class="h-100 px-4 pe-lg-0">
+              <div class="row g-5">
+                <div class="col-sm-6">
+                  <h1 class="display-5" data-toggle="counter-up">1234</h1>
+                  <p class="fs-5 text-primary">Analytics</p>
+                </div>
+                <div class="col-sm-6">
+                  <h1 class="display-5" data-toggle="counter-up">1234</h1>
+                  <p class="fs-5 text-primary">Analytics</p>
+                </div>
+                <div class="col-sm-6">
+                  <h1 class="display-5" data-toggle="counter-up">1234</h1>
+                  <p class="fs-5 text-primary">Analytics</p>
+                </div>
+                <div class="col-sm-6">
+                  <h1 class="display-5" data-toggle="counter-up">1234</h1>
+                  <p class="fs-5 text-primary">Analytics</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    UNNECCESARY!!!!! -->
+
+    <!-- Features Start 
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <h1 class="display-6 mb-5">Seeds of Success<br/>Cultivating our Futures</h1>
+            <p class="mb-4">
+                We need 2,000 community members to donate $20 to $100 monthly to help build a mosque, 
+                school, prayer space, and youth center. Your support will secure a brighter future for 
+                our community and generations to come. "Verily, the believers are like a structure,
+                each part strengthening the other." [al-Bukhari]
+
+            </p>
+            <div class="row g-3">
+              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="bg-light rounded h-100 p-3">
+                  <div
+                    class="bg-white d-flex flex-column justify-content-center text-center rounded h-100 py-4 px-3"
+                  >
+                    <img
+                      class="align-self-center mb-3"
+                      src="img/icon/icon-06-primary.png"
+                      alt=""
+                    />
+                    <h5 class="mb-0">Description</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                <div class="bg-light rounded h-100 p-3">
+                  <div
+                    class="bg-white d-flex flex-column justify-content-center text-center rounded py-4 px-3"
+                  >
+                    <img
+                      class="align-self-center mb-3"
+                      src="img/icon/icon-03-primary.png"
+                      alt=""
+                    />
+                    <h5 class="mb-0">Description</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                <div class="bg-light rounded h-100 p-3">
+                  <div
+                    class="bg-white d-flex flex-column justify-content-center text-center rounded py-4 px-3"
+                  >
+                    <img
+                      class="align-self-center mb-3"
+                      src="img/icon/icon-04-primary.png"
+                      alt=""
+                    />
+                    <h5 class="mb-0">Description</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                <div class="bg-light rounded h-100 p-3">
+                  <div
+                    class="bg-white d-flex flex-column justify-content-center text-center rounded h-100 py-4 px-3"
+                  >
+                    <img
+                      class="align-self-center mb-3"
+                      src="img/icon/icon-07-primary.png"
+                      alt=""
+                    />
+                    <h5 class="mb-0">Description</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div
+              class="position-relative rounded overflow-hidden h-100"
+              style="min-height: 400px"
+            >
+              <img
+                class="position-flex w-100 h-100"
+                src="img/image.png"
+                alt=""
+                style="object-fit: cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    UNNECCESARY!!!!-->
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="text-center mx-auto" style="max-width: 500px">
+          <h1 class="display-6 mb-5">
+            We Provide Spiritual and Community Services
+          </h1>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-item rounded h-100 p-5">
+              <div class="d-flex align-items-center ms-n5 mb-4">
+                <div
+                  class="service-icon flex-shrink-0 bg-primary rounded-end me-4"
+                >
+                  <img
+                    class="img-fluid"
+                    src="img/icon/icon-10-light.png"
+                    alt=""
+                  />
+                </div>
+                <h4 class="mb-0">Family Counselling</h4>
+              </div>
+              <p class="mb-4">
+                Our mosque offers family counseling services to support and strengthen relationships within our community, providing guidance and care for those in need.
+              </p>
+              <a class="btn btn-light px-3" href="">Read More</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item rounded h-100 p-5">
+              <div class="d-flex align-items-center ms-n5 mb-4">
+                <div
+                  class="service-icon flex-shrink-0 bg-primary rounded-end me-4"
+                >
+                  <img
+                    class="img-fluid"
+                    src="img/icon/icon-01-light.png"
+                    alt=""
+                  />
+                </div>
+                <h4 class="mb-0">Funeral Services</h4>
+              </div>
+              <p class="mb-4">
+                We are here to support our community by offering comprehensive funeral services to honor your loved ones. 
+                Our compassionate team is dedicated to providing guidance and assistance during this difficult time, ensuring a respectful and dignified farewell.
+              </p>
+              <a class="btn btn-light px-3" href="">Read More</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item rounded h-100 p-5">
+              <div class="d-flex align-items-center ms-n5 mb-4">
+                <div
+                  class="service-icon flex-shrink-0 bg-primary rounded-end me-4"
+                >
+                  <img
+                    class="img-fluid"
+                    src="img/icon/rings.png"
+                    alt=""
+                  />
+                </div>
+                <h4 class="mb-0">Marriage Servies</h4>
+              </div>
+              <p class="mb-4">
+                Our mosque provides wedding and nikkah services, helping couples celebrate their special day in accordance with Islamic traditions and values.
+              </p>
+              <a class="btn btn-light px-3" href="">Read More</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-item rounded h-100 p-5">
+              <div class="d-flex align-items-center ms-n5 mb-4">
+                <div
+                  class="service-icon flex-shrink-0 bg-primary rounded-end me-4"
+                >
+                  <img
+                    class="img-fluid"
+                    src="img/icon/quran.png"
+                    alt=""
+                  />
+                </div>
+                <h4 class="mb-0">Quran Programs</h4>
+              </div>
+              <p class="mb-4">
+                Our mosque offers Quran programs for both youth and adults, providing opportunities for everyone to deepen their understanding and connection to the Holy Quran.
+              </p>
+              <a class="btn btn-light px-3" href="">Read More</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item rounded h-100 p-5">
+              <div class="d-flex align-items-center ms-n5 mb-4">
+                <div
+                  class="service-icon flex-shrink-0 bg-primary rounded-end me-4"
+                >
+                  <img
+                    class="img-fluid"
+                    src="img/icon/arabic.png"
+                    alt=""
+                  />
+                </div>
+                <h4 class="mb-0">Arabic Programs</h4>
+              </div>
+              <p class="mb-4">
+                We offer Arabic classes at the Sahaba Youth Centre,
+                 providing an opportunity for community members of all ages to learn and connect with the language of our Deen.
+              </p>
+              <a class="btn btn-light px-3" href="">Read More</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item rounded h-100 p-5">
+              <div class="d-flex align-items-center ms-n5 mb-4">
+                <div
+                  class="service-icon flex-shrink-0 bg-primary rounded-end me-4"
+                >
+                  <img
+                    class="img-fluid"
+                    src="img/icon/school.png"
+                    alt=""
+                  />
+                </div>
+                <h4 class="mb-0">School Tutoring </h4>
+              </div>
+              <p class="mb-4">
+                We also offer school tutoring services at the Sahaba Youth Centre, with experienced teachers providing personalized support to help students excel in their studies.
+              </p>
+              <a class="btn btn-light px-3" href="">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Appointment Start -->
+    <div
+      class="container-fluid appointment my-5 py-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+            <h1 class="display-6 text-white mb-5">
+              We're a Trusted Community Institution
+            </h1>
+            <p class="text-white mb-5">
+              If you have any questions, concerns, or suggestions, please don't hesitate to reach out to us. We are here to listen and support our community in every way possible. You can contact the mosque directly by phone, email, or by visiting us in person.
+              Your feedback is invaluable in helping us serve you better and create a welcoming environment for everyone.
+            </p>
+            <div class="bg-white rounded" style="display: inline-block; padding: 3px; border: 2px solid white;">
+              <div class="d-inline-flex align-items-center bg-primary rounded" style="padding: 5px 10px; width: auto;">
+                  <h5 class="text-white mb-0" style="margin: 0;">Call: +780-243-8811</h5>
+              </div>
+          </div>
+          
+          
+          </div>
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+            <div class="bg-white rounded p-5">
+              <form>
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="gname"
+                        placeholder="Gurdian Name"
+                      />
+                      <label for="gname">First Name</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="gmail"
+                        placeholder="Gurdian Email"
+                      />
+                      <label for="gmail">Last Name</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="cname"
+                        placeholder="Child Name"
+                      />
+                      <label for="cname">Your Email</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="cage"
+                        placeholder="Child Age"
+                      />
+                      <label for="cage">Phone Number</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        placeholder="Leave a message here"
+                        id="message"
+                        style="height: 80px"
+                      ></textarea>
+                      <label for="message">Message</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary py-3 px-5" type="submit">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Appointment End -->
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="text-center mx-auto" style="max-width: 500px">
+          <h1 class="display-6 mb-5">Meet Our <br/>Team Members</h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="team-item rounded">
+              <img class="img-fluid" src="img/Ahmed.png" alt="" />
+              <div class="text-center p-4">
+                <h5>Ahmed Mohamed</h5>
+                <span>Imam</span>
+              </div>
+              <div class="team-text text-center bg-white p-4">
+                <h5>Ahmed Mohamed</h5>
+                <p>Imam</p>
+                <div class="d-flex justify-content-center">
+                  <a class="btn btn-square btn-light m-1" href=""
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a class="btn btn-square btn-light m-1" href=""
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a class="btn btn-square btn-light m-1" href=""
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                  <a class="btn btn-square btn-light m-1" href=""
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="team-item rounded">
+              <img class="img-fluid" src="img/Mumin.png" alt="" style="width: 100%; height: auto;" />
+              <div class="text-center p-4" style="padding: 20px;">
+                <h5>Muhammad Mumin</h5>
+                <span>Imam/Teacher</span>
+              </div>
+              <div class="team-text text-center bg-white p-4" style="padding: 20px;">
+                <h5>Muhammad Mumin</h5>
+                <p>Imam/Teacher</p>
+                <div class="d-flex justify-content-center">
+                  <a class="btn btn-square btn-light m-1" href=""><i class="fab fa-twitter"></i></a>
+                  <a class="btn btn-square btn-light m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                  <a class="btn btn-square btn-light m-1" href=""><i class="fab fa-youtube"></i></a>
+                  <a class="btn btn-square btn-light m-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="team-item rounded">
+              <img class="img-fluid" src="img/omar.png" alt="" />
+              <div class="text-center p-4">
+                <h5>Omar Ahmed</h5>
+                <span>Imam/Teacher</span>
+              </div>
+              <div class="team-text text-center bg-white p-4">
+                <h5>Omar Ahmed</h5>
+                <p>Imam/Teacher</p>
+                <div class="d-flex justify-content-center">
+                  <a class="btn btn-square btn-light m-1" href=""
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a class="btn btn-square btn-light m-1" href=""
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a class="btn btn-square btn-light m-1" href=""
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                  <a class="btn btn-square btn-light m-1" href=""
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="team-item rounded">
+              <img class="img-fluid" src="img/team-1.jpg" alt="" />
+              <div class="text-center p-4">
+                <h5>Zakaria Warsame</h5>
+                <span>Imam/Teacher</span>
+              </div>
+              <div class="team-text text-center bg-white p-4">
+                <h5>Full Name</h5>
+                <p>Designation</p>
+                <div class="d-flex justify-content-center">
+                  <a class="btn btn-square btn-light m-1" href=""
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a class="btn btn-square btn-light m-1" href=""
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a class="btn btn-square btn-light m-1" href=""
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                  <a class="btn btn-square btn-light m-1" href=""
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Testimonial Start 
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="text-center mx-auto" style="max-width: 500px">
+          <h1 class="display-6 mb-5">What Our Community has to Say About Us </h1>
+        </div>
+        <div class="row g-5">
+          <div class="col-lg-3 d-none d-lg-block">
+            <div class="testimonial-left h-100">
+              <img
+                class="img-fluid animated pulse infinite"
+                src="img/team-1.jpg"
+                alt=""
+              />
+              <img
+                class="img-fluid animated pulse infinite"
+                src="img/team-1.jpg"
+                alt=""
+              />
+              <img
+                class="img-fluid animated pulse infinite"
+                src="img/team-1.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+            <div class="owl-carousel testimonial-carousel">
+              <div class="testimonial-item text-center">
+                <img
+                  class="img-fluid rounded mx-auto mb-4"
+                  src="img/team-1.jpg"
+                  alt=""
+                />
+                <p class="fs-5">
+                  Dolores sed duo clita tempor justo dolor et stet lorem kasd
+                  labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy
+                  et labore et tempor diam tempor erat.
+                </p>
+                <h5>Client Name</h5>
+                <span>Profession</span>
+              </div>
+              <div class="testimonial-item text-center">
+                <img
+                  class="img-fluid rounded mx-auto mb-4"
+                  src="img/team-1.jpg"
+                  alt=""
+                />
+                <p class="fs-5">
+                  Dolores sed duo clita tempor justo dolor et stet lorem kasd
+                  labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy
+                  et labore et tempor diam tempor erat.
+                </p>
+                <h5>Client Name</h5>
+                <span>Profession</span>
+              </div>
+              <div class="testimonial-item text-center">
+                <img
+                  class="img-fluid rounded mx-auto mb-4"
+                  src="img/team-1.jpg"
+                  alt=""
+                />
+                <p class="fs-5">
+                  Dolores sed duo clita tempor justo dolor et stet lorem kasd
+                  labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy
+                  et labore et tempor diam tempor erat.
+                </p>
+                <h5>Client Name</h5>
+                <span>Profession</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 d-none d-lg-block">
+            <div class="testimonial-right h-100">
+              <img
+                class="img-fluid animated pulse infinite"
+                src="img/test-1.jpg"
+                alt=""
+              />
+              <img
+                class="img-fluid animated pulse infinite"
+                src="img/team-1.jpg"
+                alt=""
+              />
+              <img
+                class="img-fluid animated pulse infinite"
+                src="img/team-1.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    UNNECESARY-->
+
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+                <h2 class="d-flex align-items-center text-white mb-4">
+                  <img
+                    class="img-fluid me-3"
+                    src="img/icon/white.png"
+                    alt=""
+                    style="width: 100px; height: auto;" 
+                  />
+                  <span>Sahaba Mosque</span>
+                </h2>
+            <p>
+              We are a proud mosque with a rich history of 26 years, dedicated to serving and uplifting our community with faith, compassion, and unity.
+            </p>
+            <div class="d-flex pt-2">
+              <a class="btn btn-square me-1" href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-square me-1" href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-square me-1" href=""
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a class="btn btn-square me-0" href=""
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Address</h5>
+            <p>
+              <i class="fa fa-map-marker-alt me-3"></i>9216 105 Ave NW, Edmonton , Alberta 
+            </p>
+            <p><i class="fa fa-phone-alt me-3"></i>(780) 757-8800</p>
+            <p><i class="fa fa-envelope me-3"></i>info@sahabamosque.com</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Quick Links</h5>
+            <a class="btn btn-link" href="">About Us</a>
+            <a class="btn btn-link" href="">Contact Us</a>
+            <a class="btn btn-link" href="">Events</a>
+          </div>
+          
+        </div>
+      </div>
+      <div class="container-fluid copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a href="#">Sahaba Mosque</a>, All Right Reserved. Developed by: Ayub Mohamed & Salim Soufi
+            </div>
             
           </div>
         </div>
-    		<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">July 2024 - Present</span>
-    					<h2>Fellow</h2>
-    					<span class="position">Headstarter AI</span>
-    					<p class="mt-4">Collaborated with the founder and team to align goals and strategize development, ensuring app success. Contributed to all development phases, from design to testing, creating a cohesive mobile application..</p>
-    				</div>
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">May 2023 - August 2023</span>
-    					<h2>Computer Science Intern</h2>
-    					<span class="position">Rehabilitation Robotics Laboratory</span>
-						<p id = "locations">University of Alberta</p>
-    					<p class="mt-4">Developed a novel force meter for remote shoulder injury assessment. Calibrated and analyzed complex sensor data using Python libraries (Pandas, Matplotlib, Bokeh, NumPy) to identify significant trends in large datasets.</p>
-    				</div>
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">June 2022 - September 2022</span>
-    					<h2>Computer Science Intern</h2>
-    					<span class="position">M2M Tech</span>
-    					<p class="mt-4">Organized and manipulated large datasets with Python's NumPy and Pandas, demonstrating data analysis skills. Utilized Python’s Bokeh to plot cleaned data on interactive graphing models.</p>
-    				</div>
-    			</div>
-
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">September 2024 - Present</span>
-    					<h2>Front-End Developer</h2>
-    					<span class="position">Agora Work</span>
-    					<p class="mt-4">Designed a user-friendly interface using Figma's prototyping features. Developed a cross-platform mobile application with React Native and JavaScript, ensuring consistent user experience across iOS and Android.</p>
-    				</div>
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">June 2022 - September 2022</span>
-    					<h2>Research Intern</h2>
-    					<span class="position">Rehabilitation Robotics Laboratory</span>
-						<p id = "locations">University of Alberta</p>
-    					<p class="mt-4">Composed a comparative study on marker-based vs. marker-less motion capture technology. Developed MATLAB software to record and contrast data. Conducted quantitative and qualitative analysis of research participants' collected data.</p>
-    				</div>
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">June 2021 - August 2021</span>
-    					<h2>Research Intern</h2>
-    					<span class="position">Carbon, Capture, Utilization, and Storage (CCUS) Laboratory</span>
-    					<p class="mt-4">Developed energy-efficient gas separation processes for industrial and environmental applications. Researched adsorption separation processes and utilized modeling and experimental skills for CO2 capture.</p>
-    				</div>
-    			</div>
-    		</div>
-    		<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="https://docs.google.com/document/d/1Y1ieFGHaZ3IMDMuTdZPEXzaliZm11MD5/edit" class="btn btn-primary py-4 px-5">View CV</a></p>
-    			</div>
-    		</div>
-    	</div>
-    </section>
-
-
-		
-		<section class="ftco-section" id="skills-section">
-			<div class="container">
-				<div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Skills</h1>
-            <h2 class="mb-4">My Skills</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-          </div>
-        </div>
-				<div class="row">
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>Python</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
-							    <span>90%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>HTML</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
-							    <span>85%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>CSS</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="95"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:95%">
-							    <span>95%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>SQL</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
-							    <span>70%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>C</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
-							    <span>70%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>Javascript</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
-							    <span>80%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
- 
-
-    <section class="ftco-section ftco-project" id="projects-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">My Projects</h2>
-          </div>
-        </div>
-    		<div class="row">
-    			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project4.png);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="https://github.com/ssoufii/SpaceInvader">SPACE INVADERS</a></h3>
-	    				</div>
-    				</div>
-  				</div>
-  				<div class="col-md-8">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-5.png);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="https://github.com/ssoufii/AgoraApp">Agora Work</a></h3>
-	    					<span>Front End Design & Development</span>
-	    				</div>
-    				</div>
-  				</div>
-
-    			<!-- <div class="col-md-8">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-1.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Sahaba Mosque</a></h3>
-	    					<span>Web Development</span>
-	    				</div>
-    				</div> -->
-
-    				<!-- <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-6.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
-    			</div> -->
-    			<!-- <div class="col-md-4">
-    				<div class="row">
-    					<div class="col-md-12">
-		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-2.jpg);">
-		    					<div class="overlay"></div>
-			    				<div class="text text-center p-4">
-			    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-			    					<span>Web Design</span>
-			    				</div>
-		    				</div>
-	    				</div> -->
-	    				<!-- <div class="col-md-12">
-		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-3.jpg);">
-		    					<div class="overlay"></div>
-			    				<div class="text text-center p-4">
-			    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-			    					<span>Web Design</span>
-			    				</div>
-		    				</div>
-	    				</div> -->
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </section>
-
-
-    <section class="ftco-section" id="blog-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Hobbies</h1>
-            <h2 class="mb-4">My Hobbies</h2>
-            <p>Hobbies are great distractions from the worries and troubles that plague daily living, – Bill Malone</p>
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="#" class="block-20" style="background-image: url('images/basketball.png');"> 
-              </a>
-              <div class="text mt-3 float-right d-block">
-              	<div class="d-flex align-items-center mb-3 meta">
-	                <p class="mb-0">
-	                	
-	                	<a href="#" class="mr-2">Role: Point-Guard</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-                <h3 class="heading"><a href="#">Basketball</a></h3>
-                <p>I enjoy basketball because it combines physical skill, strategic thinking, and team collaboration, making every game exciting and challenging</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="#" class="block-20" style="background-image: url('images/poetry.png');">
-              </a>
-              <div class="text mt-3 float-right d-block"> 
-              	<div class="d-flex align-items-center mb-3 meta">
-	                <p class="mb-0">
-	                	
-	                	<a href="#" class="mr-2">Genre: Social Justice</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-                <h3 class="heading"><a href="#">Poetry</a></h3>
-                <p>I write poetry based on social justice issues to raise awareness, inspire change, and give a voice to those who are often unheard</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="single.html" class="block-20" style="background-image: url('images/horse.JPG');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-              	<div class="d-flex align-items-center mb-3 meta">
-	                <p class="mb-0">
-	                	
-	                	<a href="#" class="mr-2">Breed: Arabian</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-                <h3 class="heading"><a href="#">Horseback Riding </a></h3>
-                <p>I enjoy horseback riding because it allows me to connect with nature, build a strong bond with the horse, and experience the thrill of riding in the open air.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
-    </section>
+    </div>
+    <!-- Footer End -->
 
-    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-    	<div class="container">
-				<div class="row d-md-flex align-items-center">
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="10">0</strong>
-                <span>Awards</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="12">0</strong>
-                <span>Complete Projects</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="12">0</strong>
-                <span>Happy Customers</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="500">0</strong>
-                <span>Cans of RedBull</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
 
-    <section class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>I'm <span>Available</span> for 2025 Internships</h2>
-						<p>I am eager to seek new internship opportunities to further develop my skills and gain valuable experience in my field.</p>
-						<p class="mb-0"><a href="https://docs.google.com/document/d/1Y1ieFGHaZ3IMDMuTdZPEXzaliZm11MD5/edit" class="btn btn-primary py-3 px-5">Hire me</a></p>
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
 
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Feel free to contact me for any inquiries or collaborations</p>
-          </div>
-        </div>
-
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<h3 class="mb-4">Location</h3>
-	            <p>Edmonton, Alberta</p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://1234567920">+1 780 235 7761</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
-          		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:info@yoursite.com">soufi1@ualberta.ca</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<h3 class="mb-4">Website</h3>
-	            <p><a href="#">salimsoufi.com</a></p>
-	          </div>
-          </div>
-        </div>
-
- 
-<!-- 		
-
-    <footer class="ftco-footer ftco-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">About</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Links</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Services</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Graphic Design</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
-	              </ul>
-	            </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center"></div>
-        </div>
-      </div>
-    </footer>
-    
-   -->
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed(".auto-type", {
-            strings : ["Developer", "Student"],
-            typeSpeed: 150,
-            backSpeed: 150,
-            loop: true
-    	});
-    </script>
-
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
   </body>
-
 </html>
-
